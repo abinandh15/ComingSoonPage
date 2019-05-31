@@ -128,56 +128,7 @@
             color: white;
         }
 
-        @media (max-width: 500px) {
-            h1 {
-                font-size: 1.9rem;
-            }
-
-            h3 {
-                font-size: 1.7rem;
-                color: #e45064;
-            }
-
-            h4 {
-                font-size: 1rem;
-                color: #6dcff6;
-            }
-
-            .anim img {
-                margin-top: 8em;
-            }
-
-            .socialIcons {
-                margin-top: 32em;
-            }
-        }
-
-        @media (max-width: 500px) {
-            h1 {
-                font-size: 1.9rem;
-            }
-
-            h3 {
-                font-size: 1.7rem;
-                color: #e45064;
-            }
-
-            h4 {
-                font-size: 1rem;
-                color: #6dcff6;
-            }
-
-            .anim img {
-                margin-top: 8em;
-            }
-
-            .socialIcons {
-                margin-top: 32em;
-            }
-
-        }
-
-        @media (max-width: 1024px) {
+        @media(min-width: 769px) and (max-width: 1024px) {
             h1 {
                 font-size: 3.6rem;
             }
@@ -193,26 +144,116 @@
             }
 
             .anim img {
-                margin-top: 10em;
-                width: 800px;
+                margin-top: 6em;
+                object-fit: cover;
+                width: 726px;
+                height: 651px;
+                object-position: 47% 0;
             }
 
             .socialIcons {
-                margin-top: 55em;
+                margin-top: 63em;
+            }
+
+            .fa {
+                font-size: 2.5rem;
+            }
+        }
+        @media (max-width: 768px){
+            .anim img {
+                margin-top: 8em;
+                object-fit: cover;
+                width: 626px;
+                height: 465px;
+                object-position: 47% 0;
+            }
+            .socialIcons {
+                margin-top: 51em;
             }
 
             .fa {
                 font-size: 2rem;
             }
         }
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 1.9rem;
+            }
 
-        @media (max-width: 320px) {
+            h3 {
+                font-size: 1.7rem;
+                color: #e45064;
+            }
+
+            h4 {
+                font-size: 1rem;
+                color: #6dcff6;
+            }
+
             .anim img {
-                margin-top: 5em;
+                margin-top: 4em;
+                object-fit: cover;
+                width: 415px;
+                height: 335px;
+                object-position: 44% 0;
             }
 
             .socialIcons {
+                margin-top: 36em;
+            }
+            .fa{
+                font-size:1rem;
+            }
+        }
+
+        @media (max-width:375px){
+            .anim img{
+                width: 371px;
+                height: 283px;
+                object-position: 47% 0;
+            }
+            .socialIcons {
+                margin-top: 31em;
+            }
+            .fa{
+                font-size:1rem;
+            }
+        }
+
+        @media(min-width:321px) and (max-width:360px){
+            .anim img {
+                margin-top: 4em;
+                object-fit: cover;
+                width: 371px;
+                height: 265px;
+                object-position: 44% 0;
+            }
+            .socialIcons {
+                margin-top: 30em;
+            }
+            .fa{
+                font-size:1rem;
+            }
+        }
+
+       
+
+        @media (max-width: 320px) {
+            .anim img {
+                margin-top: 3em;
+                object-fit: cover;
+                width: 371px;
+                height: 265px;
+                object-position: 44% 0;
+                
+            }
+
+
+            .socialIcons {
                 margin-top: 29em;
+            }
+            .fa{
+                font-size:1rem;
             }
         }
     </style>
