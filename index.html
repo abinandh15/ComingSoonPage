@@ -1,81 +1,94 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Coming Soon!</title>
     <style>
-        @font-face{
+        @font-face {
             font-family: 'SedgwickAve';
             src: url('assets/font/SedgwickAve-Regular.ttf');
         }
-        body.noScroll { /* ...or body.dialogShowing */
-        overflow: hidden;
-        max-height:100vh;
+
+        body.noScroll {
+            /* ...or body.dialogShowing */
+            overflow: hidden;
+            max-height: 100vh;
         }
-        html{
+
+        html {
             max-height: 100vh !important;
         }
-        body{
+
+        body {
             background-color: #282828;
             font-family: 'SedgwickAve', Fallback, sans-serif;
             overflow: hidden;
-            max-height:100vh;
-        }
-        h1{
-            font-size:2.8rem;
-        }
-        h3{
-            font-size:2.6rem;
-            color:#e45064;
-        }
-        h4{
-            font-size:1.5rem;
-            color:#6dcff6;
-        }
-        .dots{
-           opacity:0.25;
-           background-image:url("assets/dots.png");
-           height:100vh;
-           width:100vw;
-           background-repeat: round;
-           background-size: contain;
-         
+            max-height: 100vh;
         }
 
-        .socialIcons{
+        h1 {
+            font-size: 2.8rem;
+        }
+
+        h3 {
+            font-size: 2.6rem;
+            color: #e45064;
+        }
+
+        h4 {
+            font-size: 1.5rem;
+            color: #6dcff6;
+        }
+
+        .dots {
+            opacity: 0.25;
+            background-image: url("assets/dots.png");
+            height: 100vh;
+            width: 100vw;
+            background-repeat: round;
+            background-size: contain;
+
+        }
+
+        .socialIcons {
             width: 100%;
             position: absolute;
             top: 0;
             left: 0;
             transform-style: preserve-3d;
-            margin-top:43em;
+            margin-top: 43em;
         }
-        .anim{
-            width: 100%;            
+
+        .anim {
+            width: 100%;
             position: absolute;
             top: 0;
             left: 0;
             transform-style: preserve-3d;
         }
-        .anim img{
-            width:569px;           
+
+        .anim img {
+            width: 569px;
             align-self: center;
-            margin-right:auto;
-            margin-top:10em;
+            margin-right: auto;
+            margin-top: 10em;
             transform: translateZ(20px);
-            
+
         }
-        .Text{
-            z-index:200;
-            color:white;
-            margin-top:2em;
+
+        .Text {
+            z-index: 200;
+            color: white;
+            margin-top: 2em;
             text-align: center;
             transform: translateZ(20px);
         }
@@ -87,106 +100,182 @@
             text-decoration: none;
             margin: 5px 2px;
             border-radius: 50%;
-            }
+        }
+
         .fa:hover {
-                opacity: 0.7;
-                color: white;
-                text-decoration: none !important
-            }
-
-            .fa-facebook {
-      
+            opacity: 0.7;
             color: white;
-            }
+            text-decoration: none !important
+        }
 
-            .fa-twitter {
-     
+        .fa-facebook {
+
             color: white;
+        }
+
+        .fa-twitter {
+
+            color: white;
+        }
+
+        .fa-linkedin {
+
+            color: white;
+        }
+
+        .fa-youtube-play {
+
+            color: white;
+        }
+
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 1.9rem;
             }
-            .fa-linkedin {
 
-  color: white;
-}
+            h3 {
+                font-size: 1.7rem;
+                color: #e45064;
+            }
 
-.fa-youtube-play {
+            h4 {
+                font-size: 1rem;
+                color: #6dcff6;
+            }
 
-  color: white;
-}
-@media (max-width: 500px) { 
-    h1{
-            font-size:1.9rem;
-        }
-        h3{
-            font-size:1.7rem;
-            color:#e45064;
-        }
-        h4{
-            font-size:1rem;
-            color:#6dcff6;
-        }
-        .anim img{
-            margin-top:8em;
-        }
-        .socialIcons{
-            margin-top:32em;
-        }
- }
- @media (max-width: 320px) { 
-    .anim img{
-            margin-top:5em;
-        }
-        .socialIcons{
-            margin-top:29em;
-        }
- }
+            .anim img {
+                margin-top: 8em;
+            }
 
+            .socialIcons {
+                margin-top: 32em;
+            }
+        }
+
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 1.9rem;
+            }
+
+            h3 {
+                font-size: 1.7rem;
+                color: #e45064;
+            }
+
+            h4 {
+                font-size: 1rem;
+                color: #6dcff6;
+            }
+
+            .anim img {
+                margin-top: 8em;
+            }
+
+            .socialIcons {
+                margin-top: 32em;
+            }
+
+        }
+
+        @media (max-width: 1024px) {
+            h1 {
+                font-size: 3.6rem;
+            }
+
+            h3 {
+                font-size: 3.2rem;
+                color: #e45064;
+            }
+
+            h4 {
+                font-size: 2rem;
+                color: #6dcff6;
+            }
+
+            .anim img {
+                margin-top: 10em;
+                width: 800px;
+            }
+
+            .socialIcons {
+                margin-top: 55em;
+            }
+
+            .fa {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .anim img {
+                margin-top: 5em;
+            }
+
+            .socialIcons {
+                margin-top: 29em;
+            }
+        }
     </style>
-  </head>
-  <body class="text-center col-md-12 col-sm-12 ">
-      <div data-tilt data-tilt data-tilt-max="5" data-tilt-speed="100" data-tilt-perspective="1500" class="ContainerDiv">
-         
-            <div class="dots" >
-                  
-            </div>
-            <div data-tilt data-tilt-reverse="true" data-tilt-max="10" data-tilt-speed="100"   class="anim">
-                <img   src="assets/Cooming-Soon-Animation-V4.gif" class="img-fluid " alt="">
-                <div  class="Text">
-                        <p><h1>#VFMG</h1></p>
-                        <p><h3>always has a Plan B,</h3></p>
-                        <p><h4>check us out on our socials!</h4></p>
-                       
-                </div>
-            </div>
- 
-      </div>
+</head>
 
-      <p class="socialIcons">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-youtube-play"></a>
-            <a href="#" class="fa fa-linkedin"></a>
+<body class="text-center col-md-12 col-sm-12 ">
+    <div data-tilt data-tilt data-tilt-max="5" data-tilt-speed="100" data-tilt-perspective="1500" class="ContainerDiv">
+
+        <div class="dots">
+
+        </div>
+        <div data-tilt data-tilt-reverse="true" data-tilt-max="10" data-tilt-speed="100" class="anim">
+            <img src="assets/Cooming-Soon-Animation-V4.gif" class="img-fluid " alt="">
+            <div class="Text">
+                <p>
+                    <h1>#VFMG</h1>
+                </p>
+                <p>
+                    <h3>always has a Plan B,</h3>
+                </p>
+                <p>
+                    <h4>check us out on our socials!</h4>
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <p class="socialIcons">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-youtube-play"></a>
+        <a href="#" class="fa fa-linkedin"></a>
     </p>
 
     <script type="text/javascript">
         VanillaTilt.init(document.querySelector(".ContainerDiv"), {
-            gyroscope:              true,   
-    gyroscopeMinAngleX:     -45    ,
-    gyroscopeMaxAngleX:     45 ,   
-    gyroscopeMinAngleY:     -45  ,  
-    gyroscopeMaxAngleY:     45 ,    
+            gyroscope: true,
+            gyroscopeMinAngleX: -45,
+            gyroscopeMaxAngleX: 45,
+            gyroscopeMinAngleY: -45,
+            gyroscopeMaxAngleY: 45,
 
         });
-        
+
         //It also supports NodeList
         VanillaTilt.init(document.querySelectorAll(".ContainerDiv"));
     </script>
 
-      <script src="assets/vanilla-tilt.min.js"></script>
-   
+    <script src="assets/vanilla-tilt.min.js"></script>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
 </html>
