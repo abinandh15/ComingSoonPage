@@ -167,6 +167,20 @@
             <a href="#" class="fa fa-linkedin"></a>
     </p>
 
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".ContainerDiv"), {
+            gyroscope:              true,   
+    gyroscopeMinAngleX:     -45    ,
+    gyroscopeMaxAngleX:     45 ,   
+    gyroscopeMinAngleY:     -45  ,  
+    gyroscopeMaxAngleY:     45 ,    
+
+        });
+        
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".ContainerDiv"));
+    </script>
+
       <script src="assets/vanilla-tilt.min.js"></script>
    
     <!-- Optional JavaScript -->
