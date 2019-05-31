@@ -24,8 +24,13 @@
             max-height: 100vh;
         }
 
+        h1,h3,h4{
+            line-height: 2rem;
+        }
+
         html {
             max-height: 100vh !important;
+            overflow: hidden;
         }
 
         body {
@@ -33,10 +38,11 @@
             font-family: 'SedgwickAve', Fallback, sans-serif;
             overflow: hidden;
             max-height: 100vh;
-            padding:0!important
+            padding:0px !important;
         }
 
         h1 {
+            margin-top:50px;
             font-size: 2.8rem;
         }
 
@@ -53,9 +59,11 @@
         .dots {
             opacity: 0.25;
             background-image: url("assets/dot1.png");
+            background-size:40px 40px;
             height: 100vh;
             width: 100vw;
             background-repeat: repeat;
+
         }
 
         .socialIcons {
@@ -81,7 +89,6 @@
             margin-right: auto;
             margin-top: 10em;
             transform: translateZ(10px);
-
         }
 
         .Text {
@@ -143,7 +150,7 @@
             }
 
             .anim img {
-                margin-top: 6em;
+                margin-top: 7em;
                 object-fit: cover;
                 width: 726px;
                 height: 651px;
@@ -151,11 +158,15 @@
             }
 
             .socialIcons {
-                margin-top: 64em;
+                margin-top: 65em;
             }
 
             .fa {
                 font-size: 2.5rem;
+            }
+            
+            h1, h3, h4 {
+                line-height: 2.9rem;
             }
         }
         @media (max-width: 768px){
@@ -200,8 +211,13 @@
             .socialIcons {
                 margin-top: 36em;
             }
+
             .fa{
                 font-size:1rem;
+            }
+
+            h1, h3, h4 {
+                line-height: 1.3rem;
             }
         }
 
@@ -216,6 +232,9 @@
             }
             .fa{
                 font-size:1.2rem;
+            }
+            h1, h3, h4 {
+                line-height: 1.3rem;
             }
         }
 
@@ -232,6 +251,9 @@
             }
             .fa{
                 font-size:1.2rem;
+            }
+            h1, h3, h4 {
+                line-height: 1.3rem;
             }
         }
 
@@ -254,11 +276,14 @@
             .fa{
                 font-size:1rem;
             }
+            h1, h3, h4 {
+                line-height: 1.3rem;
+            }
         }
     </style>
 </head>
 
-<body class="text-center col-md-12 col-sm-12 ">
+<body class="text-center ">
     <div data-tilt data-tilt data-tilt-max="2" data-tilt-speed="100" data-tilt-perspective="1500" class="ContainerDiv">
 
         <div class="dots">
@@ -288,7 +313,6 @@
         <a  href="https://www.youtube.com/channel/UCJNxnAOn-X0vtJDf6OOzTHg?view_as=subscriber&ab_channel=ViewFinMediaGroup" target="_blank" class="fa fa-youtube-play"></a>
         <a  href="https://www.linkedin.com/company/14614523/admin/" target="_blank" class="fa fa-linkedin"></a>
     </p>
-
 
 
     <script src="assets/vanilla-tilt.min.js"></script>
